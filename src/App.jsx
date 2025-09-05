@@ -22,13 +22,17 @@ const App = () => {
             const response = await getQuotes();
             let randomQuote;
 
-            do {
-                let randomIndex = Math.floor(Math.random() * response.length);
-                randomQuote = response[randomIndex];
+            if (response.length === 1) {
+                randomQuote = response[0];
+            } else {
+                do {
+                    let randomIndex = Math.floor(Math.random() * response.length);
+                    randomQuote = `"${response[randomIndex]}"`;
 
-            } while (randomQuote === quoteResponse);
-
-            setQuoteResponse(`"${randomQuote}"`);
+                } while (randomQuote === quoteResponse);
+            }
+            
+            setQuoteResponse(randomQuote);
             
         } catch (error) {
             console.error(error);

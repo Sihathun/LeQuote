@@ -10,6 +10,8 @@ const client = new Client()
 
 const database = new Databases(client);
 
+console.log(DATABASE_ID, COLLECTION_ID);
+
 
 export const addQuotes = async (quote) => {
     try {

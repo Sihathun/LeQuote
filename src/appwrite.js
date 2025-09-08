@@ -10,7 +10,9 @@ const client = new Client()
 
 const database = new Databases(client);
 
-console.log(DATABASE_ID, COLLECTION_ID);
+console.log("VITE_APPWRITE_PROJECT_ID:", import.meta.env.VITE_APPWRITE_PROJECT_ID);
+console.log("VITE_APPWRITE_DATABASE_ID:", import.meta.env.VITE_APPWRITE_DATABASE_ID);
+console.log("VITE_APPWRITE_COLLECTION_ID:", import.meta.env.VITE_APPWRITE_COLLECTION_ID);
 
 
 export const addQuotes = async (quote) => {

@@ -1,14 +1,14 @@
-#LeQuote - Random Quote Generator
-##Created by Sin Sihathun
+# LeQuote - Random Quote Generator
+## Created by Sin Sihathun
 
-##Description
+## Description
 A lightweight React-based Vite app that lets users click a button to receive a random quote from an Appwrite database. Users can also submit their own quotes to be stored in the database.
 
-##Technologies Used
+## Technologies Used
 - Frontend: React (via Vite)
 - Backend / Database: Appwrite — handles storing and retrieving quotes
 
-##Setup Instructions
+## Setup Instructions
 ```# Clone the repository
 git clone <repository_url>
 cd LeQuote

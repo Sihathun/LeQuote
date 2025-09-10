@@ -1,13 +1,30 @@
-# React + Vite
+#LeQuote - Random Quote Generator
+##Created by Sin Sihathun
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##Description
+A lightweight React-based Vite app that lets users click a button to receive a random quote from an Appwrite database. Users can also submit their own quotes to be stored in the database.
 
-Currently, two official plugins are available:
+##Technologies Used
+- Frontend: React (via Vite)
+- Backend / Database: Appwrite — handles storing and retrieving quotes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##Setup Instructions
+```# Clone the repository
+git clone <repository_url>
+cd LeQuote
 
-## Expanding the ESLint configuration
+# Install dependencies
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# LeQuote" 
+# Start the development server
+npm run dev
+
+# To build for production
+npm run build
+```
+
+###Architecture Overview
+- Frontend (React + Vite): Presents the UI with a button to fetch random quotes and a form to submit new ones.
+- Backend (Appwrite): Hosts a database that stores quotes. The frontend interacts with Appwrite using its SDK to:
+  * Fetch a random quote when the button is clicked
+  * Submit a new quote via the quote form, which is then saved into the database

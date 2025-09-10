@@ -10,7 +10,7 @@ A lightweight React-based Vite app that lets users click a button to receive a r
 
 ## Setup Instructions
 ```# Clone the repository
-git clone <repository_url>
+git clone https://github.com/Sihathun/LeQuote.git
 cd LeQuote
 
 # Install dependencies

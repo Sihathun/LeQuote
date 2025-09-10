@@ -1,7 +1,7 @@
 # LeQuote - Random Quote Generator
 ## Created by Sin Sihathun
 
-Visit the deployed project at [Le-Quote](https://le-quote.vercel.app/)
+Visit the deployed project at [LeQuote](https://lequote.vercel.app/)
 
 ## Description
 A lightweight React-based Vite app that lets users click a button to receive a random quote from an Appwrite database. Users can also submit their own quotes to be stored in the database.

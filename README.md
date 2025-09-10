@@ -23,7 +23,7 @@ npm run dev
 npm run build
 ```
 
-###Architecture Overview
+### Architecture Overview
 - Frontend (React + Vite): Presents the UI with a button to fetch random quotes and a form to submit new ones.
 - Backend (Appwrite): Hosts a database that stores quotes. The frontend interacts with Appwrite using its SDK to:
   * Fetch a random quote when the button is clicked

@@ -24,6 +24,10 @@ npm run dev
 # To build for production
 npm run build
 ```
+for the Appwrite API, you want to make a .env.local file with the following Attributes
+VITE_APPWRITE_PROJECT_ID=yourProjectId
+VITE_APPWRITE_DATABASE_ID=yourDatabaseId
+VITE_APPWRITE_COLLECTION_ID=yourCollectionId
 
 ### Architecture Overview
 - Frontend (React + Vite): Presents the UI with a button to fetch random quotes and a form to submit new ones.
